@@ -32,8 +32,7 @@ struct cplx
  *    interface, because it eliminates any copying of structs.
  */
 
-struct cplx
-cplx_add(struct cplx z1, struct cplx z2);
+struct cplx cplx_add(struct cplx z1, struct cplx z2);
 /* PROMISES: Return value is complex sum of z1 and z2. */
 
 void cplx_subtract(struct cplx z1, struct cplx z2, struct cplx *difference);
@@ -45,9 +44,7 @@ void cplx_subtract(struct cplx z1, struct cplx z2, struct cplx *difference);
  *   by subtracting z2 from z1.
  */
 
-void cplx_multiply(const struct cplx *pz1,
-                   const struct cplx *pz2,
-                   struct cplx *product);
+void cplx_multiply(const struct cplx *pz1, const struct cplx *pz2, struct cplx *product);
 /*
  * REQUIRES
  *   pz1, pz2 and product point to variables.
